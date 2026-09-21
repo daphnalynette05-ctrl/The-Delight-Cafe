@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delight Cafe</title>
+
+    <!-- jQuery Mobile CSS CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!-- jQuery & jQuery Mobile JS CDN -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        /* Center main hero image */
+        .product-img {
+            width: 50%;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* 2-column card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* Card styling */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #b33;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .contact-container {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+    <div data-role="header" data-theme="b">
+        <h1>Delight Cafe</h1>
+    </div>
+
+    <!-- NAVBAR -->
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+
+        <h2>Welcome to Delight Cafe</h2>
+
+        <p>
+            Delight Cafe offers delicious food, tasty desserts
+            and refreshing drinks.
+        </p>
+
+        <h3>Our Specialties</h3>
+
+        <!-- Responsive Card Grid -->
+        <div class="card-grid">
+
+            <div class="card">
+                <img src="img/Korean Fried Chicken.jpeg"
+                     alt="Korean Fried Chicken">
+
+                <h3>Korean Fried Chicken</h3>
+
+                <p>
+                    Crispy fried chicken coated with delicious
+                    Korean-style sauce.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/Crispy Chicken Burger.jpeg"
+                     alt="Crispy Chicken Burger">
+
+                <h3>Crispy Chicken Burger</h3>
+
+                <p>
+                    Crispy chicken served in a soft bun with fresh
+                    vegetables and special sauce.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/brownies.jpeg"
+                     alt="Brownies">
+
+                <h3>Chocolate Brownie</h3>
+
+                <p>
+                    Rich and fudgy chocolate brownie with a delicious
+                    soft texture.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/Caramel Cheesecake.jpeg"
+                     alt="Caramel Cheesecake">
+
+                <h3>Caramel Cheesecake</h3>
+
+                <p>
+                    Creamy cheesecake topped with smooth and sweet
+                    caramel sauce.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/Iced Coffee With Ice Cream.jpeg"
+                     alt="Iced Coffee with Ice Cream">
+
+                <h3>Iced Coffee With Ice Cream</h3>
+
+                <p>
+                    Iced coffee with ice cream is a refreshing,
+                    indulgent summer beverage that combines strong
+                    coffee with creamy ice cream for a dessert-like treat.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/Passion fruit juice.jpeg"
+                     alt="Passion Fruit Juice">
+
+                <h3>Passion Fruit Juice</h3>
+
+                <p>
+                    Passion fruit juice is a tropical beverage made
+                    from the pulp of passion fruit, known for its
+                    sweet-tart flavor, vibrant color, and rich
+                    nutritional profile.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="footer"
+         data-theme="b"
+         data-position="fixed">
+
+        <h4 class="footer-text">
+            ©️ 2026 Delight Cafe
+        </h4>
+
+    </div>
+</div>
+
+
+<!-- PRODUCTS PAGE -->
+<div data-role="page" id="products">
+
+    <div data-role="header" data-theme="b">
+
+        <a href="#home"
+           data-icon="home"
+           data-iconpos="notext">
+        </a>
+
+        <h1>Our Menu</h1>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <div data-role="navbar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+
+            <li>
+                <a href="#products"
+                   class="ui-btn-active">
+                   Products
+                </a>
+            </li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div data-role="content">
+
+        <ul data-role="listview"
+            data-inset="true">
+
+            <li>
+                <img src="img/Korean Fried Chicken.jpeg"
+                     alt="Korean Fried Chicken">
+
+                <h2>Korean Fried Chicken</h2>
+
+                <p>
+                    Crispy fried chicken coated with delicious
+                    Korean-style sauce.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/Crispy Chicken Burger.jpeg"
+                     alt="Crispy Chicken Burger">
+
+                <h2>Crispy Chicken Burger</h2>
+
+                <p>
+                    Crispy chicken served in a soft bun with fresh
+                    vegetables and special sauce.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/brownies.jpeg"
+                     alt="Chocolate Brownie">
+
+                <h2>Chocolate Brownie</h2>
+
+                <p>
+                    Rich and fudgy chocolate brownie with a delicious
+                    soft texture.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/Caramel Cheesecake.jpeg"
+                     alt="Caramel Cheesecake">
+
+                <h2>Caramel Cheesecake</h2>
+
+                <p>
+                    Creamy cheesecake topped with smooth and sweet
+                    caramel sauce.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/Iced Coffee With Ice Cream.jpeg"
+                     alt="Iced Coffee with Ice Cream">
+
+                <h2>Iced Coffee With Ice Cream</h2>
+
+                <p>
+                    Iced coffee with ice cream is a refreshing,
+                    indulgent summer beverage that combines strong
+                    coffee with creamy ice cream for a dessert-like treat.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/Passion fruit juice.jpeg"
+                     alt="Passion Fruit Juice">
+
+                <h2>Passion Fruit Juice</h2>
+
+                <p>
+                    Passion fruit juice is a tropical beverage made
+                    from the pulp of passion fruit, known for its
+                    sweet-tart flavor, vibrant color, and rich
+                    nutritional profile.
+                </p>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div data-role="footer"
+         data-theme="b"
+         data-position="fixed">
+
+        <h4 class="footer-text">
+            ©️ 2026 Delight Cafe
+        </h4>
+
+    </div>
+</div>
+
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+
+    <div data-role="header" data-theme="b">
+
+        <a href="#home"
+           data-icon="home"
+           data-iconpos="notext">
+        </a>
+
+        <h1>Contact Us</h1>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <div data-role="navbar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#products">Products</a></li>
+
+            <li>
+                <a href="#contact"
+                   class="ui-btn-active">
+                   Contact
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-container">
+
+        <form id="contactForm">
+
+            <h2>Contact Us</h2>
+
+            <label for="name">
+                Full Name:
+            </label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+            <br>
+
+            <label for="email">
+                Email:
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <br>
+
+            <label for="phone">
+                Phone Number:
+            </label>
+
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="Enter your phone number">
+
+            <br>
+
+            <label for="subject">
+                Subject:
+            </label>
+
+            <input type="text"
+                   id="subject"
+                   name="subject"
+                   placeholder="Enter subject">
+
+            <br>
+
+            <label for="message">
+                Message:
+            </label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      cols="40"
+                      placeholder="Write your message here..."
+                      required>
+            </textarea>
+
+            <br>
+
+            <button type="submit"
+                    data-theme="b">
+                Send Message
+            </button>
+
+            <button type="reset">
+                Clear
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- CONTACT INFORMATION -->
+    <div data-role="content">
+
+        <h3>Delight Cafe</h3>
+
+        <p>
+            <strong>Email:</strong>
+            info@delightcafe.com
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            +60 123-456789
+        </p>
+
+        <p>
+            <strong>Address:</strong>
+            Kuching, Sarawak, Malaysia
+        </p>
+
+    </div>
+
+    <div data-role="footer"
+         data-theme="b"
+         data-position="fixed">
+
+        <h4 class="footer-text">
+            ©️ 2026 Delight Cafe
+        </h4>
+
+    </div>
+
+</div>
+
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        alert("Message sent successfully!");
+
+        this.reset();
+
+    });
+
+</script>
+
+</body>
+</html>
